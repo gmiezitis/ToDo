@@ -16,104 +16,83 @@
         <h1>todos</h1>
     </div>
     <div class="wrapper">
-        <ul>
-            <li>
-<div class="task">
-                <input type="checkbox" id="ch1" class="fancy-checkbox">
-                <label for="ch1" class="checkbox2">
-                  <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </label>
-                <div class="first-box">
-                <div class="task-name"> Whats need to be done? </div>
-              </div>
-</div>
-            </li>
-            <li>
-              <div class="task">
+        <div class="form-field">
+            <div class="form">
+                <button class="select-all">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </button>
+                <input class="text-form" value="Whats need to be done?">
+            </div>
+        </div>
+
+        <div class="tasklist">
+
+            <div class="task">
                 <input type="checkbox" id="ch2" class="fancy-checkbox">
                 <label for="ch2" class="checkbox">
-              <i class="fa fa-check" aria-hidden="true">
-              </i>
-            </label>
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </label>
                 <div class="task-name"> Buy milk</div>
-              </div>
-            </li>
+                <div class="delete"><i class="fa fa-times" aria-hidden="true"></i></div>
+            </div>
 
-            <li>
-              <div class="task">
+            <div class="task">
                 <input type="checkbox" id="ch3" class="fancy-checkbox">
                 <label for="ch3" class="checkbox">
-                  <i class="fa fa-check" aria-hidden="true">
-                  </i>
+                  <i class="fa fa-check" aria-hidden="true"></i>
                 </label>
                 <div class="task-name"> Prepare the report</div>
-</div>
-            </li>
-
-            <li>
-              <div class="task">
+                <div class="delete"><i class="fa fa-times" aria-hidden="true"></i></div>
+            </div>
+            <div class="task">
                 <input type="checkbox" id="ch4" class="fancy-checkbox">
                 <label for="ch4" class="checkbox"><i class="fa fa-check" aria-hidden="true"></i></label>
-                <div class="task-name"> Call Mr.Smith </div>
-                <div class="checkboxright"><i class="fa fa-times" aria-hidden="true"></i></div>
-</div>
-            </li>
-            <li>
-              <div class="task">
+                <div class="task-name">Call Mr.Smith</div>
+                <div class="delete"><i class="fa fa-times" aria-hidden="true"></i></div>
+            </div>
+            <div class="non-label">
+                <div class="task">
 
-                <!-- <input type="checkbox" id="ch5" class="fancy-checkbox"> -->
-                <!-- <label for="ch5" class="checkbox"> -->
-                  <!-- <i class="fa fa-check" aria-hidden="true"></i></label> -->
-                  <div class="non-label">
-                <div class="task-name "> Pick up dress from the dry cleaner </div>
-              </div>
-</div>
-            </li>
+                    <input type="checkbox" id="ch5" class="fancy-checkbox">
+                    <div class="lonely">
+                        <div class="task-name">Pick up dress from the dry cleaner</div>
+                        <!-- <div class="delete"><i class="fa fa-times" aria-hidden="true"></i></div> -->
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="task">
+              <input type="checkbox" id="ch3" class="fancy-checkbox">
+              <label for="ch3" class="checkbox"><i class="fa fa-check" aria-hidden="true"></i></label>
+              <div class="task-name"></div>
+              <div class="delete"><i class="fa fa-times" aria-hidden="true"></i></div>
+            </div>
+            <div class="task">
+              <input type="checkbox" id="ch4" class="fancy-checkbox">
+              <label for="ch4" class="checkbox"><i class="fa fa-check" aria-hidden="true"></i></label>
+              <div class="task-name"></div>
+              <div class="delete"><i class="fa fa-times" aria-hidden="true"></i></div>
+            </div>
+            <div class="task">
+              <input type="checkbox" id="ch5" class="fancy-checkbox">
+              <label for="ch5" class="checkbox"><i class="fa fa-check" aria-hidden="true"></i></label>
+              <div class="task-name"></div>
+              <div class="delete"><i class="fa fa-times" aria-hidden="true"></i></div>
+            </div>
 
-        <!--
-        <ul>
-            <li>
-                <input type="checkbox" class="fancy-checkbox" />
-                <label class="heroCheckbox">
-                  Buy the milk
-                </div>
-            </li>
-            <li>
-                <div class="secondCheckbox">
-                    <label class="fancy-checkbox">
-        <input type="checkbox" />
-        <span>Buy milk</span>
-    </label>
-                </div>
-            </li>
-            <li>
-                <div class="thirdCheckbox">
-                    <label class="fancy-checkbox">
-        <input type="checkbox" />
-        <span>Prepare the report</span>
-    </label>
-                </div>
-            </li>
-            <li>
-                <div class="fourthCheckbox">
-                    <label class="fancy-checkbox">
-          <input type="checkbox" />
-          <span>Call Mr.Smith</span>
-      </label>
-                </div>
-            </li>
-            <li>
-                <div class="fifthCheckbox">
-                    <label class="fancy-checkbox">
-              <input type="checkbox" />
-              <span>Pick up dress from the dry cleaner</span>
-          </label>
-                </div>
-            </li>
-        </ul> -->
 
-<li>
-        <div class="clearfix cf">
+                    <div class="non-label">
+                        <div class="task-name "> Pick up dress from the dry cleaner </div>
+                    </div>
+                </div>
+            </li>
+-->
+
+        </div>
+        <!-- tasklist -->
+
+        <div class="footer-cf">
+            <!-- lastrow -->
             <div class="leftspan">
                 3 items left
             </div>
@@ -123,12 +102,10 @@
                 <button> Completed</button>
             </div>
             <div class="rightspan">Clear completed</div>
-
         </div>
-</li>
-</ul>
 
     </div>
+    <!-- wrapper -->
 
 
 </body>

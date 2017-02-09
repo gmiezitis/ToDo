@@ -1,60 +1,71 @@
-.cf:before, .cf:after {
-    content: " ";
-    display: table;
-}
+
 body{
   margin: 0;
   padding: 0;
 }
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
 
 .cf:after {
     clear: both;
-}
 
+}
 h1{
   font-size: 50px;
   text-align: center;
   font-family: fantasy;
   font-weight: lighter;
   margin: 0 auto;
+  color: darkred;
+  opacity: 0.5;
 }
 .wrapper{
 text-align: left;
 margin: 0 auto;
-width: 600px;
+width: 500px;
+border: 2px groove lightgrey;
+box-shadow:  0 7px 0 -4px #fff, 0 7px 3px -4px #777, 0 15px 0 -8px #FFE, 0 15px 3px -8px #777;
  }
-
+ .form{
+display: inline-flex;
+ }
+ 
  .task{
    display: flex;
    padding: 8px;
+   border-bottom: 1px solid #999;
  }
 
- ul{
-   padding: 10px;
 
- }
  .task-name{
    font-size: 25px;
-   margin: -3px 10px;
- }
- .first-box{
-  font-style: italic;
- }
-
- li{
-   border: 1px solid grey;
-   box-shadow: 0px -1px 3px #ccc;
-   padding: 7px;
 
  }
+ .form-field{
+
+  border-bottom: 2px groove #999;
+ }
+ .text-form{
+   width: 300px;
+   padding: 10px 10px;
+   font-size: 26px;
+   border: none;
+   font-style: italic;
+   opacity: 0.5;
+ }
+.select-all{
+  background: white;
+  border: none;
+  font-size: 35px;
+  color: #999;
+}
  .non-label{
-   margin: 0 31px;
+margin-left: 37px;
    border: groove;
  }
-.checkbox2{
-  font-size: 25px;
-  padding-right: 14px;
-}
+
 
 .fancy-checkbox{
   display: none;
@@ -65,38 +76,31 @@ width: 600px;
  border: 1px solid grey;
  opacity: 0.5;
  border-radius: 50%;
- margin-right: 10px;
+ margin-right: 20px;
 
 }
 .fancy-checkbox + .checkbox i{
-  display: block;
   width: 10px;
   height: 10px;
   margin: 3px 3px;
   display: none;
-  color: green;
 }
 .fancy-checkbox:checked + .checkbox i {
   display: block;
   color: green;
 }
-.fancy-checkbox:checked ~ .task-name + .checkboxright{
+.fancy-checkbox:checked ~ .task-name {
   text-decoration: line-through;
   color: #ccc;
-
-
 }
 .fancy-checkbox:checked + .checkbox i + .task-name {
   display: block;
   color: green;
 }
-
-
-li{
-  display: block;
+.footer-cf{
+  padding: 10px 0;
+  border-top: 1px solid grey;
 }
-
-
 .rightspan{
   float: right;
   margin-top: -20px;
@@ -108,11 +112,9 @@ li{
   padding-left: 10px;
   width: 33%;
 }
-.buttons{
 
-}
-.checkboxright{
-
+.delete{
+display: none;
 }
 
 button:hover{
@@ -120,11 +122,11 @@ button:hover{
   border-radius: 5px;
   background: none;
 }
-.clearfix .cf::after{
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.task:hover .delete{
+  display: block;
   position: absolute;
+  right: 400px;
+  padding: 6px;
+  color: darkred;
+  font-size: medium;
 }
