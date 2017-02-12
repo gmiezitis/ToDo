@@ -1,7 +1,13 @@
-
+*{
+  box-sizing: border-box;
+}
 body{
   margin: 0;
   padding: 0;
+
+}
+body,input,textarea,select,button{
+  font-family:  'Open Sans', sans-serif;
 }
 .cf:before, .cf:after {
     content: " ";
@@ -13,57 +19,77 @@ body{
 
 }
 h1{
-  font-size: 50px;
+  font-size: 80px;
   text-align: center;
-  font-family: fantasy;
-  font-weight: lighter;
+  font-weight: 300;
   margin: 0 auto;
-  color: darkred;
+  color: #ead7d8;
   opacity: 0.5;
+
 }
 .wrapper{
 text-align: left;
 margin: 0 auto;
 width: 500px;
-border: 2px groove lightgrey;
-box-shadow:  0 7px 0 -4px #fff, 0 7px 3px -4px #777, 0 15px 0 -8px #FFE, 0 15px 3px -8px #777;
+border: 2px solid #ededed;
+box-shadow: 0 8px 0 -5px #F6F6F5, 0 8px 1px -4px #CECED3, 0 16px 0 -9px #F6F6F5, 0 11px 8px -2px #CECECF;;
  }
- .form{
-display: inline-flex;
- }
- 
+
  .task{
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
    padding: 8px;
-   border-bottom: 1px solid #999;
+   border-bottom: 1px solid #ededed;
  }
 
 
  .task-name{
-   font-size: 25px;
+   font-size: 23px;
 
  }
  .form-field{
-
-  border-bottom: 2px groove #999;
+  border-bottom: 2px solid #ededed;
+ }
+ .form{
+   overflow: hidden;
  }
  .text-form{
-   width: 300px;
+   width: 100%;
    padding: 10px 10px;
-   font-size: 26px;
+   font-size: 22px;
    border: none;
+   color: black;
+   margin-left: 10px;
+ }
+ .text-form::-webkit-input-placeholder{
    font-style: italic;
-   opacity: 0.5;
+
+ }
+ .text-form::-moz-placeholder{
+   font-style: italic;
+
+ }
+ .text-form:-ms-input-placeholder{
+   font-style: italic;
+
+ }
+ .text-form::placeholder{
+   font-style: italic;
+
  }
 .select-all{
-  background: white;
+  background: none;
   border: none;
-  font-size: 35px;
-  color: #999;
+  font-size: 30px;
+  color: #ededed;
+  padding-left: 10px;
+  float: left;
 }
  .non-label{
 margin-left: 37px;
-   border: groove;
+   border: 2px ridge #ededed;
+
  }
 
 
@@ -71,12 +97,13 @@ margin-left: 37px;
   display: none;
 }
 .checkbox{
-  width: 20px;
- height: 20px;
+  width: 25px;
+ height: 25px;
  border: 1px solid grey;
  opacity: 0.5;
  border-radius: 50%;
  margin-right: 20px;
+ margin-top: 4px;
 
 }
 .fancy-checkbox + .checkbox i{
@@ -98,17 +125,17 @@ margin-left: 37px;
   color: green;
 }
 .footer-cf{
-  padding: 10px 0;
-  border-top: 1px solid grey;
+  padding: 5px 0;
+  border-top: 1px solid #ededed;
+  font-size: 14px;
 }
-.rightspan{
+button.buttons-item.right{
   float: right;
-  margin-top: -20px;
   padding-right: 10px;
 }
 .leftspan{
   float: left;
-  margin-top: 1px;
+  margin-top: 3px;
   padding-left: 10px;
   width: 33%;
 }
@@ -117,10 +144,15 @@ margin-left: 37px;
 display: none;
 }
 
-button:hover{
-  border: 1px solid red;
-  border-radius: 5px;
+.buttons-item{
   background: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: 14px;
+}
+.buttons-item:hover{
+  border-color: #aaa;
+  cursor: pointer;
 }
 .task:hover .delete{
   display: block;
@@ -129,4 +161,5 @@ button:hover{
   padding: 6px;
   color: darkred;
   font-size: medium;
+  cursor: pointer;
 }

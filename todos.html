@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title> todos </title>
     <link href='//fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i&amp;subset=latin-ext" rel="stylesheet">
+
     <link href="style3.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,11 +19,11 @@
     </div>
     <div class="wrapper">
         <div class="form-field">
-            <div class="form">
-                <button class="select-all">
+            <button class="select-all">
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
             </button>
-                <input class="text-form" value="Whats need to be done?">
+            <div class="form">
+                <input class="text-form" placeholder="Whats need to be done?">
             </div>
         </div>
 
@@ -97,11 +99,12 @@
                 3 items left
             </div>
             <div class="buttons">
-                <button class="active">All</button>
-                <button> Active</button>
-                <button> Completed</button>
+                <button class="buttons-item active">All</button>
+                <button class="buttons-item"> Active</button>
+                <button class="buttons-item"> Completed</button>
+                <button class="buttons-item right">Clear completed</button>
             </div>
-            <div class="rightspan">Clear completed</div>
+
         </div>
 
     </div>
