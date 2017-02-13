@@ -32,7 +32,7 @@ text-align: left;
 margin: 0 auto;
 width: 500px;
 border: 2px solid #ededed;
-box-shadow: 0 8px 0 -5px #F6F6F5, 0 8px 1px -4px #CECED3, 0 16px 0 -9px #F6F6F5, 0 11px 8px -2px #CECECF;;
+box-shadow: 0 8px 0 -5px #F6F6F5, 0 8px 1px -4px #CECED3, 0 16px 0 -9px #F6F6F5, 0 11px 8px -2px #CECECF;
  }
 
  .task{
@@ -46,6 +46,7 @@ box-shadow: 0 8px 0 -5px #F6F6F5, 0 8px 1px -4px #CECED3, 0 16px 0 -9px #F6F6F5,
 
  .task-name{
    font-size: 23px;
+   padding-right: 1em;
 
  }
  .form-field{
@@ -87,9 +88,8 @@ box-shadow: 0 8px 0 -5px #F6F6F5, 0 8px 1px -4px #CECED3, 0 16px 0 -9px #F6F6F5,
   float: left;
 }
  .non-label{
-margin-left: 37px;
-   border: 2px ridge #ededed;
-
+  margin-left: 37px;
+  border: 2px ridge #ededed;
  }
 
 
@@ -97,6 +97,7 @@ margin-left: 37px;
   display: none;
 }
 .checkbox{
+  flex-shrink: 0;
   width: 25px;
  height: 25px;
  border: 1px solid grey;
@@ -129,7 +130,7 @@ margin-left: 37px;
   border-top: 1px solid #ededed;
   font-size: 14px;
 }
-button.buttons-item.right{
+.buttons-item.right{
   float: right;
   padding-right: 10px;
 }
